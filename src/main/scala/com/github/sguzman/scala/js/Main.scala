@@ -14,6 +14,7 @@ object Main {
       .map(_.asInstanceOf[dom.MouseEvent])
       .map(s => (s.clientX, s.clientY))
       .subscribe(s => {
+        ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight)
         ctx.fillStyle = s"rgb(${Random.nextInt(256)}, ${Random.nextInt(256)}, ${Random.nextInt(256)})"
         ctx.fillRect(Random.nextInt(200), 0, 200, 200)
       })
