@@ -16,7 +16,7 @@ object Main {
       .subscribe(s => {
         ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight)
         ctx.fillStyle = s"rgb(${Random.nextInt(256)}, ${Random.nextInt(256)}, ${Random.nextInt(256)})"
-        ctx.fillRect(Random.nextInt(200), 0, 200, 200)
+        ctx.fillRect(s._1 / 5, s._2 / 5, 10, 10)
       })
   }
 }
