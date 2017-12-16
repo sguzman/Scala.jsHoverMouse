@@ -31,7 +31,8 @@ resolvers ++= Seq(
 
 /** Source Dependencies */
 libraryDependencies ++= Seq(
-  "org.scala-js" %%% "scalajs-dom" % "0.9.4"
+  "org.scala-js" %%% "scalajs-dom" % "0.9.4",
+  "com.github.lukajcb" %%% "rxscala-js" % "0.15.2"
 )
 
 /** Make sure to fork on run */
